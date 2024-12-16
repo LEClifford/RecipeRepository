@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color: #ffecb4;
+    color: #5a3d2b;
+    font-family: 'Raleway', sans-serif; 
+}
+
+.headerContainer{
+    background-color: #5a3d2b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffcc80;
+}
+
+.SearchBox{
+    margin-top: 10px;
+}
+
+.mainContainer{
+	height: calc (100vh - 100px);
+	padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imageSection {
+    width: 50%;
+    overflow-y: auto;
+}
+
+.modalSection{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.resultsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.images-container-swiper{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 15px;
+    max-width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.swiper-wrapper{
+    display: flex;
+    gap: 10px;
+    justify-items: left;
+    align-items: left;
+}
+
+.swiper-slide img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.8;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.swiper-slide img.selected {
+    border: 4px solid #ff9901;
+}
+
+#recipeModal {
+    display: none;
+    position: relative;
+    background-color: rgb(243, 195, 123);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-content{
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    background: rgb(243, 195, 123);
+    border-radius: 8px;
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(70, 70, 70);
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive;
+    color: #e5771e;
+}
+
+button, input, label {
+    font-family: 'Raleway', sans-serif;
+    color: #f4a127;
+    background-color:  #ffecb4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #e5771e;
+    color: #ffecb4;
+}
+
+.headerContainer h2{
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke-color: #e26600;
+    -webkit-text-stroke-width: 2px;
+}
+
+.searchResults h2 {
+    margin-bottom: 20px;
+}
+

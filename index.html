@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>What's for dinner?</title>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h2>Welcome to the Recipe Repository!</h2>
+        <div class="SearchBox">
+            <form action="">
+                <label for="searchMenus">Search Menus: </label>
+                <input type="search" id="searchMenus" name="searchMenus"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </header>
+    <div class="mainContainer">
+        <section class="imageSection">
+            <div class="searchResults">
+                <h2 id="searchHeader"></h2>
+                <div class="resultsContainer">
+                    <div class="images-container-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Meal images should be added dynamically as slides -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modalSection">
+            <div id="recipeModal" class="modal">
+                <div class="recipeDetails"></div>
+                <span class="close">&times;</span>
+                <h1 class="modal-title"><!-- Meal Name --></h1>
+                <ul class="modal-ingredients"><!-- List of ingredients --></ul>
+                <p class="modal-instructions"><!-- Recipe instructions --></p>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
